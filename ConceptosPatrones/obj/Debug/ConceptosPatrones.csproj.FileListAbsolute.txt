@@ -1,0 +1,9 @@
+c:\users\admin\documents\visual studio 2012\Projects\ConceptosPatrones\ConceptosPatrones\bin\Debug\ConceptosPatrones.exe.config
+c:\users\admin\documents\visual studio 2012\Projects\ConceptosPatrones\ConceptosPatrones\bin\Debug\Config.json
+c:\users\admin\documents\visual studio 2012\Projects\ConceptosPatrones\ConceptosPatrones\bin\Debug\ConceptosPatrones.exe
+c:\users\admin\documents\visual studio 2012\Projects\ConceptosPatrones\ConceptosPatrones\bin\Debug\ConceptosPatrones.pdb
+c:\users\admin\documents\visual studio 2012\Projects\ConceptosPatrones\ConceptosPatrones\bin\Debug\Newtonsoft.Json.dll
+c:\users\admin\documents\visual studio 2012\Projects\ConceptosPatrones\ConceptosPatrones\bin\Debug\Newtonsoft.Json.xml
+c:\users\admin\documents\visual studio 2012\Projects\ConceptosPatrones\ConceptosPatrones\obj\Debug\ConceptosPatrones.exe
+c:\users\admin\documents\visual studio 2012\Projects\ConceptosPatrones\ConceptosPatrones\obj\Debug\ConceptosPatrones.pdb
+C:\Users\admin\Documents\Visual Studio 2012\Projects\ConceptosPatrones\ConceptosPatrones\obj\Debug\ConceptosPatrones.csprojResolveAssemblyReference.cache
