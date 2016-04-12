@@ -24,6 +24,7 @@ namespace ConceptosPatrones
                 //    command.ExecuteNonQuery();
                 //}
                 Console.WriteLine("...conectado");
+                connection.Close();
             }
             //https://www.connectionstrings.com/sql-server/
             //nombre del servidor (LocalDb)\v11.0

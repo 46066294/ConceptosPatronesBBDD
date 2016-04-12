@@ -10,13 +10,14 @@ using System.Data.Common;
 
 namespace ConceptosPatrones
 {
-    class CreateConnectionDB
+    //Factory
+    public static class CreateConnectionDB
     {
         public static DbConnection GetConnection(ConnectionType connectionType)
         {
             if(connectionType == ConnectionType.Sql)
             {
-                return new SqlConnection("Data Source=(LocalDB)\v11.0;Initial Catalog=cursoC#;Integrated Security=True");
+                return new SqlConnection(@"Data Source=(LocalDB)\v11.0;Initial Catalog=cursoC#;Integrated Security=True");
             }
 
             return new OdbcConnection();
