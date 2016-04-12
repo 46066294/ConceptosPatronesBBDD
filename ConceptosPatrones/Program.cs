@@ -17,12 +17,13 @@ namespace ConceptosPatrones
             using (var connection = CreateConnectionDB.GetConnection(Config.Instance.ConnectionType))
             {
                 connection.Open();
-                //using (var command = new SqlCommand())
-                //{
-                //    command.CommandText = "insert into [table](Name) values('Xavi')";
-                //    command.Connection = connection as SqlConnection;
-                //    command.ExecuteNonQuery();
-                //}
+                using (var command = new SqlCommand())
+                {
+                    command.CommandText = "insert into [table](Name) values('Xavi')";
+                    command.Connection = connection as SqlConnection;
+                    command.ExecuteNonQuery();
+                    Console.WriteLine("...ok");
+                }
                 Console.WriteLine("...conectado");
                 connection.Close();
             }
