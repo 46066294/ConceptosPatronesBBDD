@@ -1,3 +1,5 @@
 ﻿{
-    ConnectionType : "Sql"
+    ConnectionType : "Sql",
+	ConnectionString : "Data Source=(LocalDB)\\v11.0;Initial Catalog=cursoC#;Integrated Security=True"
+
 }

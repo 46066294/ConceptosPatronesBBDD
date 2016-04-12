@@ -13,14 +13,25 @@ namespace ConceptosPatrones
     //Factory
     public static class CreateConnectionDB
     {
-        public static DbConnection GetConnection(ConnectionType connectionType)
-        {
-            if(connectionType == ConnectionType.Sql)
+        public static DbConnection GetConnection()
+        {   //Se está incumpliendo el principio SOLID - D
+            if(Config.Instance.ConnectionType == ConnectionType.Sql)
             {
-                return new SqlConnection(@"Data Source=(LocalDB)\v11.0;Initial Catalog=cursoC#;Integrated Security=True");
+                return new SqlConnection(Config.Instance.ConnectionString);
             }
-
             return new OdbcConnection();
+
+            //Documentación: https://www.connectionstrings.com/sql-server/
+        }
+
+        public static DbCommand GetCommand()
+        {
+            if (Config.Instance.ConnectionType == ConnectionType.Sql)
+            {
+                return new SqlCommand();
+                
+            }
+            return new OdbcCommand();
         }
     }
 }

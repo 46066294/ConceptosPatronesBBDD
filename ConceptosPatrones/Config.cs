@@ -13,6 +13,7 @@ using Newtonsoft.Json.Converters;
 
 namespace ConceptosPatrones
 {
+    //Singleton
     public class Config
     {
         readonly static Config _instance;
@@ -40,9 +41,12 @@ namespace ConceptosPatrones
             }
         }
 
+        //POA - Convierte la cadena al tipo que necesitamos
         [JsonProperty("ConnectionType", Required = Required.Always)]
         [JsonConverter(typeof(StringEnumConverter))]
         public ConnectionType ConnectionType { get; private set; }
+        [JsonProperty("ConnectionString", Required = Required.Always)]
+        public string ConnectionString { get; set; }
 
     }
 }
